@@ -1,0 +1,7 @@
+/* Estilos para el contenedor del gráfico */
+.chart-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+

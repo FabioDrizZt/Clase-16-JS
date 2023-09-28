@@ -1,0 +1,60 @@
+/* style.css */
+
+/* Establecer estilos básicos para el cuerpo y la página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para la galería de imágenes */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Uso auto-fit para ajustar automáticamente las columnas según el tamaño de la ventana, pero no menos de 300px por columna */
+  gap: 20px; /* Espacio entre las imágenes */
+}
+
+/* Estilos para cada artículo de la galería */
+article {
+  position: relative;
+  border-radius: 8px;
+  max-height: 300px; /* Altura máxima para cada artículo */
+  overflow: hidden;
+}
+
+/* Estilos para las imágenes dentro de los artículos */
+article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
+  object-position: center top; /* Coloca la imagen en el centro horizontal y en la parte superior vertical del contenedor */
+}
+
+/* Estilos para los enlaces dentro de los artículos */
+article a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+/* Estilos para los enlaces cuando se desplaza sobre ellos */
+article a:hover {
+  opacity: 1;
+}

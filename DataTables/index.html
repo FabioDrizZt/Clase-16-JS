@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabla de Empleados</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tabla de Empleados</h1>
+    <table id="empleados" class="display">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Puesto</th>
+          <th>Salario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Marcos</td>
+          <td>Desarrollador</td>
+          <td>$500,000</td>
+        </tr>
+        <tr>
+          <td>Raul</td>
+          <td>Diseñador</td>
+          <td>$450,000</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>Gerente</td>
+          <td>$600,000</td>
+        </tr>
+        <tr>
+          <td>Anastasia</td>
+          <td>Analista</td>
+          <td>$420,000</td>
+        </tr>
+        <tr>
+          <td>Ruperto</td>
+          <td>Contador</td>
+          <td>$480,000</td>
+        </tr>
+        <tr>
+          <td>Francisco</td>
+          <td>Marketing</td>
+          <td>$550,000</td>
+        </tr>
+        <tr>
+          <td>Gabriel</td>
+          <td>Asistente</td>
+          <td>$380,000</td>
+        </tr>
+        <tr>
+          <td>Michael</td>
+          <td>Ventas</td>
+          <td>$520,000</td>
+        </tr>
+        <tr>
+          <td>Jasper</td>
+          <td>Recursos Humanos</td>
+          <td>$480,000</td>
+        </tr>
+        <tr>
+          <td>Marcela</td>
+          <td>Logística</td>
+          <td>$490,000</td>
+        </tr>
+        <tr>
+          <td>John Doe</td>
+          <td>Desarrollador</td>
+          <td>$80,000</td>
+        </tr>
+        <tr>
+          <td>Jane Smith</td>
+          <td>Diseñador</td>
+          <td>$75,000</td>
+        </tr>
+        <tr>
+          <td>Robert Johnson</td>
+          <td>Gerente</td>
+          <td>$100,000</td>
+        </tr>
+        <tr>
+          <td>Susan Williams</td>
+          <td>Analista</td>
+          <td>$70,000</td>
+        </tr>
+        <tr>
+          <td>Michael Brown</td>
+          <td>Contador</td>
+          <td>$85,000</td>
+        </tr>
+        <tr>
+          <td>Linda Davis</td>
+          <td>Marketing</td>
+          <td>$90,000</td>
+        </tr>
+        <tr>
+          <td>William Wilson</td>
+          <td>Asistente</td>
+          <td>$65,000</td>
+        </tr>
+        <tr>
+          <td>Mary Jones</td>
+          <td>Ventas</td>
+          <td>$88,000</td>
+        </tr>
+        <tr>
+          <td>James Taylor</td>
+          <td>Recursos Humanos</td>
+          <td>$85,000</td>
+        </tr>
+        <tr>
+          <td>Emily Anderson</td>
+          <td>Logística</td>
+          <td>$87,000</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#empleados").DataTable();
+      });
+    </script>
+  </body>
+</html>
